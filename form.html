@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Milly Zheng</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body id ="formhtml">
+        <script>
+            alert("Welcome to my quiz! \nEnjoy! :)");
+        </script>
+        <form action="results.html" method ="get">
+            <div id ="intro">
+                <h1 id = "title">Which Grass Starter Pokemon are you? </h1>
+                <p id = descrip>The pokemon you choose as your companion can say a lot about you. Answer these questions, to find out more about yourself! </p>
+            </div>
+
+            <div class = question>
+                <label for="fname"> 1. What is your name </label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+
+            <div class = question>
+                <label for="amount">2. Favorite number from 1-400?</label>
+                <input type="number" id="amount " name="amount" step="1" required>
+            </div>
+
+            <div class = question>
+                <p> 3. Other than grass types, what other types do you like?</p>
+                <input type="checkbox" id="type" name="type" value="fighting">
+                <label for="fighting"> fighting</label>
+
+                <input type="checkbox" id="type" name="type" value="posion" >
+                <label for="posion"> posion</label>
+
+                <input type="checkbox" id="type" name="type" value="ground">
+                <label for="ground"> ground</label>
+
+                <input type="checkbox" id="type" name="type" value="psychic">
+                <label for="psychic"> psychic</label>
+
+            </div>
+
+            <div class = question>
+                <p> 4. What trait best describes you?</p>
+                <input type="radio" id="loving" name="trait" value="loving">
+                <label for="loving">Loving</label>
+
+                <input type="radio" id="calm" name="trait" value="calm">
+                <label for="calm">Calm</label>
+
+                <input type="radio" id="friendly" name="trait" value="friendly">
+                <label for="friendly">friendly</label>
+
+                <input type="radio" id="nonchalant" name="trait" value="nonchalant">
+                <label for="nonchalant">Nonchalant</label>
+            </div>
+
+            <div class = question>
+                <p> 5. Who is your favorite  pokemon character?</p>
+
+                <div class="pic">
+                    <img src= "images/brock.webp">
+                    <img src= "images/may.webp">
+                    <img src= "images/ash.png">
+                    <img src= "images/dawn.webp">
+                </div>
+                
+                <input id = "brock" type="radio" id="Brock" name="character" value="Brock">
+                <label for="Brock">Brock</label>
+
+                <input id = "may" type="radio" id="May" name="character" value="May">
+                <label for="May">May</label>
+
+                <input id = "ash" type="radio" id="Ash" name="character" value="Ash">
+                <label for="Ash">Ash</label>
+
+                <input id = "dawn" type="radio" id="Dawn" name="character" value="Dawn">
+                <label for="Dawn">Dawn</label>
+            </div>
+
+            <div class = question>
+                <p> 6. Which Region is your favorite</p>
+                <input type="radio" id="Kanto" name="place" value="Kanto">
+                <label for="Kanto">Kanto</label>
+
+                <input type="radio" id="Johto" name="place" value="Johto">
+                <label for="Johto">Johto</label>
+
+                <input type="radio" id="Hoenn" name="place" value="Hoenn">
+                <label for="Hoenn">Hoenn</label>
+
+                <input type="radio" id="Sinnoh" name="place" value="Sinnoh">
+                <label for="Sinnoh">Sinnoh</label>
+            </div>
+
+            <div id ="submit">
+                <input id="submit-btn" type="Submit" value="submit" >
+            </div>
+
+        </form>
+
+
+    </body>
+</html>
